@@ -1,0 +1,93 @@
+.album {
+    margin-top: 60px;
+}
+.album-card{
+    background-color: white;
+    box-shadow: 2px 2px 4px #bbbbbb;
+    width: 70%;
+    height: 550px;
+    margin: 2% auto;
+    position: relative;
+}
+
+.image-wrapper {
+    width: 100%;
+    height: 65%;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.name {
+    text-align: left;
+    font-size: 1.2em;
+    margin: 2%;
+}
+.genres{
+    text-align: left;
+    font-size: 0.9em;
+    margin: 2%;
+}
+.genre{
+    color: #888888;
+    font-size: .9em;
+    margin: 10px;
+}
+.action-count {
+    width: 50%;
+    text-align: right;
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+    color: #888888;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+.action-count > span {
+    margin: 2%;
+}
+.action{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.action > img {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.albums-not-loaded{
+    color: black;
+    font-size: 1.4em;
+    font-weight: 900;
+}
+
+.spinner{
+    width: 30%;
+    position: fixed;
+    top: 250px;
+    left: 35%;
+}
+.spinner > img {
+    width: 50px;
+    height: 50px;
+}
+.sorting  {
+    margin: 2%;
+    color: black;
+    font-size: 1.1em;
+    font-weight: 500
+}
+.sorting > select {
+    outline: none;
+    border: none;
+    height: 30px;
+}
+@media (max-width: 940px) {
+    .album-card {
+        width: 90%;
+    }
+}

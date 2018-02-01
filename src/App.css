@@ -1,0 +1,68 @@
+.App {
+  margin: 0px;
+  padding: 0px;
+}
+
+header{
+  background-color: white;
+  box-shadow: 2px  2px 4px #bbbbbb;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 10;
+}
+input {
+  outline: none;
+  border: none;
+  width: 50%;
+  margin: 5px auto;
+  height: 40px;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 1px 1px 2px #bbbbbb;
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+button {
+  width: 60px;
+  margin: 10px auto;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  text-align: center;
+  color: white;
+  background-color: black;
+  box-shadow: 1px 1px 2px #777777;
+  cursor: pointer;
+  height:40px;
+}
+
+button :hover {
+  transform: scale(1.1);
+}
+
+.albums-wrapper {
+  margin-top: 5%;
+  width: 48%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.tracks-wrapper {
+  margin-top: 5%;
+  width: 48%;
+  text-align: center;
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+@media (max-width: 720px) {
+  .tracks-wrapper, .albums-wrapper {
+    display: block;
+    width: 100%;
+  }
+}

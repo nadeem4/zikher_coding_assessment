@@ -1,0 +1,21 @@
+.comment-box {
+    width: 80%;
+    text-align: left;
+    height: 24px;
+    border: 1px solid #bbbbbb;
+    margin: 2%;
+    outline: none;
+}
+.rating {
+    margin: 2%;
+    text-align: left;
+}
+.rating > span {
+    margin: 1%;
+    
+}
+.rating > span > img {
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+ }

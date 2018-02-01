@@ -1,0 +1,75 @@
+.track-card{
+    background-color: white;
+    box-shadow: 2px 2px 4px #bbbbbb;
+    width: 70%;
+    height: 650px;
+    margin: 2% auto;
+    position: relative;
+}
+
+.image-wrapper {
+    width: 100%;
+    height: 65%;
+}
+img {
+    width: 100%;
+    height: 100%;
+}
+.name {
+    text-align: left;
+    font-size: 1.2em;
+    margin: 2%;
+}
+.singers {
+    text-align: left;
+    font-size: 0.9em;
+    margin: 2%;
+}
+.singer {
+    color: #888888;
+    font-size: .9em;
+    margin: 10px;
+}
+.action{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}
+
+.action > img {
+    width: 25px;
+    height: 25px;
+    margin-right: 15px;
+    cursor: pointer;
+}
+.album-name {
+    text-align: left;
+    font-size: 0.9em;
+    margin: 2%;
+}
+.album-name > span {
+    color: #888888;
+    font-size: .9em;
+    margin: 10px;
+}
+.length {
+    text-align: left;
+    font-size: 0.9em;
+    margin: 2%;
+}
+.length > span {
+    color: #888888;
+    font-size: .9em;
+    margin: 10px;
+}
+.tarcks-not-loaded{
+    color: black;
+    font-size: 1.4em;
+    font-weight: 900;
+}
+
+@media (max-width: 940px) {
+    .track-card {
+        width: 90%;
+    }
+}
