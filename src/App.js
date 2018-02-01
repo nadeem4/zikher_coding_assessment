@@ -17,6 +17,7 @@ class App extends Component {
       tracks: [],
       errorMessage: ''
     }
+    this.accessToken = 'BQCr3FXsINRMSsQci7KUgxy1ZE94J58auHo9SJTubLsf4XsahOqZOu-Lx4kEeh1SUKihkC2SyEzkYnLQZ5PnoBwEebe8nlzLqn2orKfF4_66W90zCIS3aLWZSt-nWPNNexxVdVx_eoEZ5-LWXXPkkpEUkOfCV4eL3UrnLxHE61IXiTkS_15S45ATTNPz-xztDGkNk-B1gQMoTWsQneGeVUmb7z8o37upowOQZ3hqrdBJxDKrGz_bFeiARVNREPdk316V0giznRDm_odCog'
   
   };
   
@@ -25,7 +26,7 @@ class App extends Component {
     unirest.get(`https://api.spotify.com/v1/search?q=Muse&type=track%2Cartist&market=US&limit=20&offset=5`)
     .headers({'Accept': 'application/json',
               'Content-Type': 'application/json',
-              'Authorization' : 'Bearer BQAinokAhn_bAaKt5MTvgvALNtQWCRsq7ZDrMV-P9CnwJ4gGX3cxw1GnrDzg1-vS92Bi-pUnbzZ5At-R3delMd9TmrmH83VN0FCcxsvRsxlOFmwYs9_58SBA0IWuvvxFdPfddWDyn54X1IZfo7ko-J0SUjMiUMFEz7VudckFU4TizzkZ2BdpNg_GFRwRjsaw4q5X30JwKAGGr1I2sps2zcIHHQvW_ls3esJPY4eeMvk_Y_NldLSn61q03tf9cwyfjspwNK1XujKKT7OGCA'})
+              'Authorization' : `Bearer ${this.accessToken} `})
     .end(function (response) {
       console.log(response.body);
       if(response.body.error){
@@ -58,7 +59,7 @@ class App extends Component {
     unirest.get(`https://api.spotify.com/v1/search?q=${val}&type=track%2Cartist&market=US&limit=20&offset=5`)
     .headers({'Accept': 'application/json',
               'Content-Type': 'application/json',
-              'Authorization': 'Bearer BQAinokAhn_bAaKt5MTvgvALNtQWCRsq7ZDrMV-P9CnwJ4gGX3cxw1GnrDzg1-vS92Bi-pUnbzZ5At-R3delMd9TmrmH83VN0FCcxsvRsxlOFmwYs9_58SBA0IWuvvxFdPfddWDyn54X1IZfo7ko-J0SUjMiUMFEz7VudckFU4TizzkZ2BdpNg_GFRwRjsaw4q5X30JwKAGGr1I2sps2zcIHHQvW_ls3esJPY4eeMvk_Y_NldLSn61q03tf9cwyfjspwNK1XujKKT7OGCA'})
+              'Authorization':  `Bearer ${this.accessToken} `})
     .end(function (response) {
       if(response.body.error){
           that.setState({
